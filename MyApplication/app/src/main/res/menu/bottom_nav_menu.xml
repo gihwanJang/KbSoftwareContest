@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_my_page"
+        android:icon="@drawable/ic_my_page"
+        android:title="마이 페이지" />
+
+    <item
+        android:id="@+id/navigation_typeSelect1"
+        android:icon="@drawable/ic_location"
+        android:title="주변 알림" />
+
+
+    <item
+        android:id="@+id/navigation_donation"
+        android:icon="@drawable/ic_donation"
+        android:title="기부" />
+
+    <item
+        android:id="@+id/navigation_typeSelect2"
+        android:icon="@drawable/ic_card"
+        android:title="포인트" />
+
+</menu>

@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringServerApplication<SpringServer>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.foch.springserver.SpringServerApplication",
+            "projectName": "SpringServer",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

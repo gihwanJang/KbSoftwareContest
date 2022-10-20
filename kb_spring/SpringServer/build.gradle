@@ -1,0 +1,39 @@
+plugins {
+	id 'org.springframework.boot' version '2.7.3'
+	id 'io.spring.dependency-management' version '1.0.13.RELEASE'
+	id 'java'
+	id 'war'
+}
+
+tasks.jar {
+    manifest.attributes["Main-Class"] = "package com.foch.springserver"
+}
+
+group = 'com.foch'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '8'
+apply plugin: 'war'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.28'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.json:json:20220320'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
+
+jar{
+	enabled = false
+}
+
+bootWar {
+	archiveName("D.war")
+}

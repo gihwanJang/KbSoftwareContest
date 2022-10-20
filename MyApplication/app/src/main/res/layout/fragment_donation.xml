@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/apple_bold"
+            android:text="기부"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/my_page_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/apple_bold"
+                android:text="기부자 명"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="기부 금액"
+                android:textColor="#000000"
+                android:fontFamily="@font/apple_bold"
+                android:gravity="center"
+                android:textSize="30sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <android.widget.Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/sign_up_edit_border2"
+                    android:layout_marginEnd="20dp"
+                    android:text="   일반 기부   "
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/apple_bold"/>
+
+                <android.widget.Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/sign_up_edit_border2"
+                    android:layout_marginStart="20dp"
+                    android:text="   정기 기부   "
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/apple_bold"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="당일 최대 기부금"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/apple_bold"
+            android:text="기부 내역"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/my_page_layout" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

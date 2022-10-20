@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="복지기관 인증이 필요합니다."
+            android:textColor="#000000"
+            android:fontFamily="@font/apple_bold"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+        <android.widget.Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="    알아보기    "
+            android:textSize="20sp"
+            android:background="@drawable/sign_up_edit_border2"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
